@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_screen"
+    android:background="@color/dark_cyan"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Меню"
+        android:textSize="40px"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="20px"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        >
+
+        <LinearLayout
+            android:id="@+id/dishesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/cyan"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:id="@+id/zakaz"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:text="Заказ"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
